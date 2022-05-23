@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/add-48px.xml" value="0.2677083333333333" />
+        <entry key="app/src/main/res/drawable-v24/outline_add_24.xml" value="0.2677083333333333" />
+        <entry key="app/src/main/res/drawable-v24/rounded_button.xml" value="0.23333333333333334" />
         <entry key="app/src/main/res/drawable/forest-48px.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/drawable/login-24px.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/drawable/outline_account_circle_20.xml" value="0.19270833333333334" />
@@ -13,8 +16,11 @@
         <entry key="app/src/main/res/drawable/outline_settings_phone_24.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/drawable/outline_star_24.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/drawable/pets-48px.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/list_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_loading.xml" value="0.1578125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14074074074074075" />
+        <entry key="app/src/main/res/layout/activity_new_contact.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_single_contact.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.1111111111111111" />
       </map>
     </option>
   </component>

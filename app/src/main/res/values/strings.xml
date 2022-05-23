@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">App Final</string>
+    <string name="add">add</string>
     <string name="nombreContacto">Mi persona</string>
     <string name="ciudadContacto">Medellin</string>
     <string name="profesionContacto">Desarrolador</string>
     <string name="telefonoContacto">3005557988</string>
     <string name="emailContacto">mauricio.henao@gmail.com</string>
+    <string name="new_name">Nombre:</string>
+    <string name="new_city">Ciudad:</string>
+    <string name="new_profession">Profesion:</string>
+    <string name="new_phone">Telefono:</string>
+    <string name="new_email">Email:</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_back">Volver</string>
 </resources>

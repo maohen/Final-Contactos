@@ -8,25 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/red_500"
+        android:paddingBottom="10dp"
         android:layout_marginBottom="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingHorizontal="8dp"
-                android:textAlignment="textStart">
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingVertical="12dp"
                     android:textAlignment="textStart">
 
                     <ImageView
@@ -34,21 +31,28 @@
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_centerVertical="true"
-                        android:outlineAmbientShadowColor="@color/black"
-                        android:outlineSpotShadowColor="@color/black"
+                        android:outlineAmbientShadowColor="@color/white"
+                        android:outlineSpotShadowColor="@color/white"
                         android:paddingLeft="1dp"
                         android:paddingRight="1dp"
                         android:src="@drawable/outline_account_circle_24" />
 
                     <TextView
-                        android:id="@+id/nombreContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:text="Nombre: "
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/nameUnique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nombreContacto"
-                        android:textColor="@color/white"
-                        android:textSize="22dp"
-                        android:textAllCaps="true"
-                        android:textStyle="bold">
+                        android:textColor="@color/black"
+                        android:textSize="22dp">
                     </TextView>
 
                 </LinearLayout>
@@ -59,6 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingVertical="6dp"
                     android:textAlignment="textStart">
                     <ImageView
                         android:layout_width="35dp"
@@ -71,13 +76,23 @@
                         android:src="@drawable/outline_home_24" />
 
                     <TextView
-                        android:id="@+id/ciudadContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Ciudad: "
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:paddingStart="8dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/ciudadUnique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="@string/ciudadContacto"
-                        android:textColor="@color/white"
-                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
                         android:paddingStart="8dp"
                         >
                     </TextView>
@@ -86,6 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingVertical="6dp"
                     android:textAlignment="textStart">
                     <ImageView
                         android:layout_width="35dp"
@@ -98,31 +114,34 @@
                         android:src="@drawable/outline_favorite_border_24" />
 
                     <TextView
-                        android:id="@+id/profesionContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Profesión: "
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:paddingStart="8dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/profesionUnique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="@string/profesionContacto"
-                        android:textColor="@color/white"
-                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
                         android:paddingStart="8dp"
                         >
                     </TextView>
-                </LinearLayout>
 
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingHorizontal="10dp"
-                android:paddingTop="8dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
@@ -134,12 +153,21 @@
                         android:src="@drawable/outline_settings_phone_24" />
 
                     <TextView
-                        android:id="@+id/telefonoContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Ciudad: "
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:paddingStart="8dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/telefonoUnique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/telefonoContacto"
-                        android:textColor="@color/white"
-                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
                         android:paddingStart="8dp"
                         android:layout_marginTop="4dp">
                     </TextView>
@@ -148,6 +176,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingVertical="6dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="35dp"
@@ -160,18 +189,54 @@
                         android:src="@drawable/outline_mark_email_read_20" />
 
                     <TextView
-                        android:id="@+id/emailContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Email: "
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:paddingStart="8dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/emailUnique"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/emailContacto"
-                        android:textColor="@color/white"
-                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
                         android:paddingStart="8dp"
                         android:layout_marginTop="4dp">
                     </TextView>
                 </LinearLayout>
 
-            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnBackUnique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_back"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/ligth"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+
+
 </LinearLayout>

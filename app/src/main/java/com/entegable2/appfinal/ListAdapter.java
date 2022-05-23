@@ -1,10 +1,10 @@
 package com.entegable2.appfinal;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -56,6 +56,16 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ContactoViewHo
             viewProfesion = itemView.findViewById((R.id.profesionContacto));
             viewTelefono = itemView.findViewById((R.id.telefonoContacto));
             viewCorreo = itemView.findViewById((R.id.emailContacto));
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, UniqueContact.class);
+                    intent.putExtra("ID", listaContactos.get(getAdapterPosition()).getId());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
